@@ -1,6 +1,6 @@
 ## NWL React Native ⚛️
 
-# Project developed in the React Native mission at NLW #06
+# Project developed in the React Native at NLW #06
 * Project Status: Working...👷🏽‍♂️
 
 ## Project 💻
