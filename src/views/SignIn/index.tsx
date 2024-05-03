@@ -1,4 +1,4 @@
-import { Image, Text, View, StatusBar } from 'react-native';
+import { Image, Text, View } from 'react-native';
 
 import { styles } from './styles';
 import IllustrationImg from '../../assets/illustration.png';
@@ -7,19 +7,13 @@ import { ButtonIcon } from '../../components/ButtonIcon';
 export function SignIn() {
   return (
     <View style={styles.container}>
-        <StatusBar 
-            barStyle='light-content'
-            backgroundColor='transparent'
-            translucent
-        />
       <Image source={IllustrationImg} style={styles.image} resizeMode='stretch' />
 
-      <View style={styles.content}>
-        
+      <View style={styles.content}> 
         <Text style={styles.title}>
-          Organize {'\n'}
-          suas jogatinas {'\n'}
-          facilmente
+          Conecte-se {'\n'}
+          e organize suas {'\n'}
+          jogatinas
         </Text>
         
         <Text style={styles.subtitle}>
@@ -31,8 +25,8 @@ export function SignIn() {
             title='Entrar com Discord' 
             activeOpacity={0.7}
         />
-        
       </View>
+      
     </View>
   );
 }
