@@ -16,6 +16,7 @@ export function Profile() {
 
             <Text style={styles.message}>Hoje é dia de Vitoria</Text>
       </View>
+              
     </View>
   );
 }
