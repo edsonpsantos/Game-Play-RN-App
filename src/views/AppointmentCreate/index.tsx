@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Text, ScrollView, KeyboardAvoidingView } from 'react-native';
+import { View, Text, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 
@@ -13,12 +13,13 @@ import { Header } from '../../components/Header';
 
 import { theme } from '../../global/styles/theme';
 import { styles } from './styles';
+import { Button } from '../../components/Button';
 
 export function AppointmentCreate() {
   const [category, setCategory] = useState('');
   return (
-    <KeyboardAvoidingView style={styles.container}>
-      <Background>
+    <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.container}>
+      <ScrollView>
         <Header title={'Agendar Partida'} />
 
         <Text
@@ -76,8 +77,11 @@ export function AppointmentCreate() {
             <Text style={styles.caracteresLimit}>Max 100 caracteres</Text>
           </View>
           <TextArea multiline maxLength={100} numberOfLines={5} autoCorrect={false} />
+
+          <Button style={styles.footer} title='Agendar' />
+          
         </View>
-      </Background>
+      </ScrollView>
     </KeyboardAvoidingView>
   );
 }
