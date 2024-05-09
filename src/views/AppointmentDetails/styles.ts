@@ -8,14 +8,13 @@ export const styles = StyleSheet.create({
   },
   banner: {
     width: '100%',
-    height: 234,
-    marginBottom: 30
+    height: 234
   },
-  bannerContent:{
+  bannerContent: {
     flex: 1,
     justifyContent: 'flex-end',
     paddingHorizontal: 16,
-    marginTop: 30
+    marginBottom: 30
   },
   title: {
     fontFamily: theme.fonts.title700,
@@ -25,13 +24,14 @@ export const styles = StyleSheet.create({
   subtitle: {
     fontFamily: theme.fonts.text400,
     fontSize: 13,
-    color: theme.colors.heading
+    color: theme.colors.heading,
+    lineHeight: 21
   },
-  members:{
+  members: {
     marginLeft: 16,
     marginTop: 27
   },
-  footer:{
+  footer: {
     paddingHorizontal: 16,
     paddingVertical: 20,
     marginBottom: getBottomSpace()

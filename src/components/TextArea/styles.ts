@@ -5,12 +5,15 @@ export const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: 75,
-    color: theme.colors.heading,
-    backgroundColor: theme.colors.secondary40,
-    borderRadius: 8,
     fontFamily: theme.fonts.text400,
     fontSize: 13,
-    marginRight: 4,
-    textAlign: 'center'
+    color: theme.colors.heading,
+    textAlignVertical: 'top',
+    backgroundColor: theme.colors.secondary40,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: theme.colors.secondary50,
+    paddingHorizontal: 16,
+    paddingTop: 16,
   }
 });
