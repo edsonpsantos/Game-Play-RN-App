@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { View, Text } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 import { LinearGradient } from 'expo-linear-gradient';

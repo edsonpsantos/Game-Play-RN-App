@@ -5,10 +5,10 @@ export const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: 56,
-    backgroundColor: theme.colors.primary,
-    borderRadius: 8,
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    borderRadius: 8,
+    backgroundColor: theme.colors.primary,
   },
   title: {
     flex: 1,
@@ -27,6 +27,7 @@ export const styles = StyleSheet.create({
   },
   icon: {
     width: 24,
-    height: 18
+    height: 24,
+    resizeMode: 'cover'
   }
 });

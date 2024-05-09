@@ -3,16 +3,11 @@ import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    width: 62,
-    height: 66,
-    borderRadius: 8,
-    backgroundColor: theme.colors.discord,
+    flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
-    overflow: 'hidden'
+    paddingTop: 24
   },
-  image: {
-    width: 24,
-    height: 18
+  guilds: {
+    width: '100%'
   }
 });

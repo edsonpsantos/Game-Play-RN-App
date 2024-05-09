@@ -1,3 +1,4 @@
+import React from 'react';
 import { FlatList, ImageBackground, Text, View } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 import { Fontisto } from '@expo/vector-icons';

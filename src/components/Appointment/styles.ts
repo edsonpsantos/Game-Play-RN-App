@@ -5,27 +5,27 @@ export const styles = StyleSheet.create({
   container: {
     width: '100%',
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   content: {
-    flex: 1,
+    flex: 1
   },
   header: {
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 12,
+    marginBottom: 12
   },
-  footer:{
+  footer: {
     width: '100%',
-    flexDirection:'row',
-    justifyContent: 'space-between',
-  },
-  dateInfo:{
     flexDirection: 'row',
-    alignItems:'center'
+    justifyContent: 'space-between'
   },
-  date:{
+  dateInfo: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  date: {
     fontFamily: theme.fonts.text500,
     fontSize: 13,
     color: theme.colors.heading,
@@ -34,22 +34,30 @@ export const styles = StyleSheet.create({
   title: {
     fontFamily: theme.fonts.title700,
     fontSize: 18,
-    color: theme.colors.heading,
+    color: theme.colors.heading
   },
   playersInfo: {
-    flexDirection:'row',
-    alignItems:'center',
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   category: {
     fontFamily: theme.fonts.text400,
-    fontSize: 13,
     color: theme.colors.highlight,
-    marginRight: 8,
+    fontSize: 13,
+    marginRight: 16
   },
   player: {
     fontFamily: theme.fonts.text500,
     fontSize: 13,
     marginLeft: 8,
-    marginRight: 8,
+    marginRight: 8
+  },
+  guildIconContainer: {
+    height: 68,
+    width: 64,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 16
   }
 });

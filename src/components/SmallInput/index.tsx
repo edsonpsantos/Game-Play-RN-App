@@ -1,3 +1,4 @@
+import React from 'react';
 import { TextInputProps } from 'react-native';
 import { styles } from './styles';
 import { TextInput } from 'react-native-gesture-handler';

@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
 import { theme } from '../../global/styles/theme';
-import { getBottomSpace } from 'react-native-iphone-x-helper';
 
 export const styles = StyleSheet.create({
   container: {
@@ -13,11 +12,11 @@ export const styles = StyleSheet.create({
   select: {
     width: '100%',
     height: 68,
+    flexDirection: 'row',
+    alignItems: 'center',
     borderColor: theme.colors.secondary50,
     borderWidth: 1,
     borderRadius: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
     paddingRight: 25,
     overflow: 'hidden'
   },
@@ -60,6 +59,6 @@ export const styles = StyleSheet.create({
   },
   footer:{
    marginVertical: 21,
-   marginBottom: 56 
+   marginBottom: 56,
   }
 });
