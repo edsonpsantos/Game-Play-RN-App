@@ -4,11 +4,14 @@ import { useNavigation } from '@react-navigation/native';
 
 import { styles } from './styles';
 import IllustrationImg from '../../assets/illustration.png';
+
+import { useAuth } from '../../hooks/auth';
 import { ButtonIcon } from '../../components/ButtonIcon';
 import { Background } from '../../components/Background';
 
 export function SignIn() {
   const navigation = useNavigation();
+  const { user } = useAuth();
 
   const handleSignIn = () => {
     navigation.navigate('Home');
