@@ -39,11 +39,11 @@ type AuthorizationResponse = AuthSession.AuthSessionResult & {
 
 export const AuthContext = createContext({} as AuthContextData);
 
-function AuthProvider({ children }: AuthProviderProps) {
+const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<User>({} as User);
   const [loading, setLoading] = useState(false);
 
-  async function login() {
+  const login = async () => {
     try {
       setLoading(true);
 
@@ -73,9 +73,9 @@ function AuthProvider({ children }: AuthProviderProps) {
     } finally {
       setLoading(false);
     }
-  }
+  };
   //regra persistência do usuário autenticado
-  async function loadUserStorageData() {
+  const loadUserStorageData = async () => {
     const storage = await AsyncStorage.getItem(COLLECTION_USERS);
 
     if (storage) {
@@ -84,14 +84,14 @@ function AuthProvider({ children }: AuthProviderProps) {
 
       setUser(userLogged);
     }
-  }
+  };
 
   useEffect(() => {
     loadUserStorageData();
   }, []);
 
   return <AuthContext.Provider value={{ user, login, loading }}>{children}</AuthContext.Provider>;
-}
+};
 
 function useAuth() {
   const context = useContext(AuthContext);
