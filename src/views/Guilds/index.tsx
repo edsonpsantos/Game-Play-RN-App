@@ -5,7 +5,7 @@ import { styles } from './styles';
 import { Guild, GuildProps } from '../../components/Guild';
 import { ListDivider } from '../../components/ListDivider';
 import { Load } from '../../components/Load';
-import { api } from '../../services/api';
+import { discord } from '../../assets/discord.png';
 
 type Props = {
   handleGuildsSelected: (guild: GuildProps) => void;
@@ -16,13 +16,13 @@ export function Guilds({ handleGuildsSelected }: Props) {
   const [loading, setLoading] = useState(true);
 
   const guildsArray: GuildProps[] = [
-    { id: '1', name: 'Lendários', icon: 'image.png', owner: true },
-    { id: '2', name: 'Fifa 2024', icon: 'image.png', owner: true },
-    { id: '3', name: 'Fortnite', icon: 'image.png', owner: true },
-    { id: '4', name: 'D&D', icon: 'image.png', owner: true },
-    { id: '5', name: 'Red Dead', icon: 'image.png', owner: true },
-    { id: '6', name: 'Fortnite', icon: 'image.png', owner: true },
-    { id: '7', name: 'Fortnite', icon: 'image.png', owner: true }
+    { id: '1', name: 'Lendários', icon: `${discord}.png`, owner: true },
+    { id: '2', name: 'Fifa 2024', icon: `${discord}.png`, owner: true },
+    { id: '3', name: 'Fortnite', icon: `${discord}.png`, owner: true },
+    { id: '4', name: 'D&D', icon: `${discord}.png`, owner: true },
+    { id: '5', name: 'Red Dead', icon: `${discord}.png`, owner: true },
+    { id: '6', name: 'Fortnite', icon: `${discord}.png`, owner: true },
+    { id: '7', name: 'Fortnite', icon: `${discord}.png`, owner: true }
   ];
 
   const fetchGuilds = async () => {
