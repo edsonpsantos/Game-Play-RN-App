@@ -15,14 +15,16 @@ export function Guilds({ handleGuildsSelected }: Props) {
   const [guilds, setGuilds] = useState<GuildProps[]>([]);
   const [loading, setLoading] = useState(true);
 
+  const discordImage = discord;
+
   const guildsArray: GuildProps[] = [
-    { id: '1', name: 'Lendários', icon: `${discord}.png`, owner: true },
-    { id: '2', name: 'Fifa 2024', icon: `${discord}.png`, owner: true },
-    { id: '3', name: 'Fortnite', icon: `${discord}.png`, owner: true },
-    { id: '4', name: 'D&D', icon: `${discord}.png`, owner: true },
-    { id: '5', name: 'Red Dead', icon: `${discord}.png`, owner: true },
-    { id: '6', name: 'Fortnite', icon: `${discord}.png`, owner: true },
-    { id: '7', name: 'Fortnite', icon: `${discord}.png`, owner: true }
+    { id: '1', name: 'Lendários', icon: discordImage, owner: true },
+    { id: '2', name: 'Fifa 2024', icon: discordImage, owner: true },
+    { id: '3', name: 'Fortnite', icon: discordImage, owner: true },
+    { id: '4', name: 'D&D', icon: discordImage, owner: true },
+    { id: '5', name: 'Red Dead', icon: discordImage, owner: true },
+    { id: '6', name: 'Fortnite', icon: discordImage, owner: true },
+    { id: '7', name: 'Fortnite', icon: discordImage, owner: true }
   ];
 
   const fetchGuilds = async () => {

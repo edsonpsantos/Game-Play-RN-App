@@ -2,7 +2,6 @@ import { ReactNode, createContext, useContext, useEffect, useState } from 'react
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as AuthSession from 'expo-auth-session';
 
-import { COLLECTION_USERS } from '../configs/database';
 const { SCOPE } = process.env;
 const { CLIENT_ID } = process.env;
 const { CDN_IMAGE } = process.env;
@@ -10,6 +9,7 @@ const { REDIRECT_URI } = process.env;
 const { RESPONSE_TYPE } = process.env;
 
 import { api } from '../services/api';
+import { COLLECTION_USERS } from '../configs/database';
 
 type User = {
   id: string;
@@ -74,6 +74,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
       setLoading(false);
     }
   };
+  
   //regra persistência do usuário autenticado
   const loadUserStorageData = async () => {
     const storage = await AsyncStorage.getItem(COLLECTION_USERS);
