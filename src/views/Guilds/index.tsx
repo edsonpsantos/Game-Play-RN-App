@@ -24,7 +24,7 @@ export function Guilds({ handleGuildsSelected }: Props) {
     { id: '4', name: 'D&D', icon: discordImage, owner: true },
     { id: '5', name: 'Red Dead', icon: discordImage, owner: true },
     { id: '6', name: 'Fortnite', icon: discordImage, owner: true },
-    { id: '7', name: 'Fortnite', icon: discordImage, owner: true }
+    { id: '7', name: 'Need for Speed', icon: discordImage, owner: true }
   ];
 
   const fetchGuilds = async () => {
@@ -50,7 +50,7 @@ export function Guilds({ handleGuildsSelected }: Props) {
         <FlatList
           keyExtractor={(item) => item.id}
           data={guilds}
-          renderItem={({ item }) => <Guild data={item} onPress={() => handleGuildsSelected(item)} />}
+          renderItem={({ item }) => <Guild key={item.id} data={item} onPress={() => handleGuildsSelected(item)} />}
           ListHeaderComponent={() => <ListDivider isCentered />}
           ItemSeparatorComponent={() => <ListDivider isCentered />}
           showsVerticalScrollIndicator={false}

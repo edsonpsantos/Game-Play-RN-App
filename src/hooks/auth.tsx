@@ -24,6 +24,7 @@ type AuthContextData = {
   user: User;
   loading: boolean;
   login: () => Promise<void>;
+  signOut: () => Promise<void>;
 };
 
 type AuthProviderProps = {
@@ -42,6 +43,11 @@ export const AuthContext = createContext({} as AuthContextData);
 const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<User>({} as User);
   const [loading, setLoading] = useState(false);
+
+  const signOut = async () => {
+    setUser({} as User);
+    await AsyncStorage.removeItem(COLLECTION_USERS);
+  };
 
   const login = async () => {
     try {
@@ -74,7 +80,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
       setLoading(false);
     }
   };
-  
+
   //regra persistência do usuário autenticado
   const loadUserStorageData = async () => {
     const storage = await AsyncStorage.getItem(COLLECTION_USERS);
@@ -91,7 +97,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     loadUserStorageData();
   }, []);
 
-  return <AuthContext.Provider value={{ user, login, loading }}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={{ user, loading, login, signOut }}>{children}</AuthContext.Provider>;
 };
 
 function useAuth() {
