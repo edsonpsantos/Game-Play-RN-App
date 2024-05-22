@@ -1,7 +1,7 @@
-## NWL React Native ⚛️
+## Game Play React Native ⚛️
 
 # Project developed in the React Native at NLW #06
-* Project Status: Working...👷🏽‍♂️
+* Project Status: Done
 
 ## Project 💻
 Application to help you connect and organize fun and play with friends. Create groups to play your favorite games with your friends with this App that has Discord authentication.
