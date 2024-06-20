@@ -1,6 +1,6 @@
 ## Game Play React Native ⚛️
 
-# Project developed in the React Native at NLW #06
+# Project developed in the React Native at NLW
 * Project Status: Done
 
 ## Project 💻
