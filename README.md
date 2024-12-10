@@ -53,12 +53,12 @@ The project was designed in figma (https://www.figma.com).
 
 ## Screens 📱
 
-![Splash Screen](https://github.com/edsonpsantos/images/blob/main/GamePlay/SplashScreen.png)
-![Login Screen](https://github.com/edsonpsantos/images/blob/main/GamePlay/LoginScreen.png)
-![Home Screen](https://github.com/edsonpsantos/images/blob/main/GamePlay/HomeScreen.png)
-![Appointment Screen](https://github.com/edsonpsantos/images/blob/main/GamePlay/AppointmentScreen.png)
-![Server Screen](https://github.com/edsonpsantos/images/blob/main/GamePlay/SelectServerScreen.png)
-![Detail Screen](https://github.com/edsonpsantos/images/blob/main/GamePlay/DetailScreen.png)
+![Splash Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/GamePlay/SplashScreen.png)
+![Login Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/GamePlay/LoginScreen.png)
+![Home Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/GamePlay/HomeScreen.png)
+![Appointment Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/GamePlay/AppointmentScreen.png)
+![Server Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/GamePlay/SelectServerScreen.png)
+![Detail Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/GamePlay/DetailScreen.png)
 
 ## License 📑
 This project is under the MIT license. 
